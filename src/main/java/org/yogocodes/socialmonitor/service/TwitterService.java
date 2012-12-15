@@ -10,6 +10,8 @@ import org.springframework.social.twitter.api.SearchResults;
 import org.springframework.social.twitter.api.TimelineOperations;
 import org.springframework.social.twitter.api.Tweet;
 import org.springframework.social.twitter.api.Twitter;
+import org.springframework.social.twitter.api.TwitterProfile;
+import org.springframework.social.twitter.api.UserOperations;
 import org.springframework.stereotype.Service;
 
 @Service("twitterService")
@@ -66,6 +68,11 @@ public class TwitterService {
 		TimelineOperations timelineOperations = twitter.timelineOperations();
 		
 		return timelineOperations.getStatus(tweetId);
+	}
+
+	public TwitterProfile getUser(String userId) {
+		UserOperations userOperations = twitter.userOperations();
+		return userOperations.getUserProfile(userId);
 	}
 	
 	

@@ -19,7 +19,7 @@
 				<c:param name="id" value="${tweet.id}" />
 			</c:url>
 			<c:url value="/viewuser.htm" var="viewUserUrl">
-				<c:param name="user" value="${tweet.fromUser}" />
+				<c:param name="userid" value="${tweet.fromUser}" />
 			</c:url>
 			
 			<li><b><a href="${viewUserUrl}"><c:out value="${tweet.fromUser}" /></a></b> 
