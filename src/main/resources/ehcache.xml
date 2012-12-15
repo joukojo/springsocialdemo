@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+	<defaultCache maxElementsInMemory="100" 
+		eternal="false" timeToIdleSeconds="5" timeToLiveSeconds="10">
+
+	</defaultCache>
+	<cache name="SimplePageFragmentCachingFilter"
+		maxElementsInMemory="100"  eternal="false"
+		timeToIdleSeconds="10000" timeToLiveSeconds="10000">
+	</cache>
+
+</ehcache>
